@@ -18,7 +18,7 @@
     <div id="mly" style="width: 640px; height: 480px;"></div>
     <div id="map" style="width: 640px; height: 480px;"></div>
     <script>
-      var map = L.map("map").setView(
+      var map = L.map("map", { doubleClickZoom: false, tap: false }).setView(
         [56.04351888068181, 12.695600612967427],
         15
       );
@@ -35,7 +35,7 @@
 
       var mly = new Mapillary.Viewer(
         "mly",
-        "QjI1NnU0aG5FZFZISE56U3R5aWN4Zzo3NTM1MjI5MmRjODZlMzc0",
+        "Z0dfbEE1Z1N6d3MweVVsNWREN0F3UTpjMWRlMDNhOGVlZTU5MWUy",
         "ucCv5frbeq8hBDdo9AaQgg",
         {
           component: {
